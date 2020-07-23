@@ -102,16 +102,16 @@ close
       }
 
       //get element by getElementsBy Name
-     var hamMenu = document.getElementsByName('hamburger');
+    var hamMenu = document.getElementsByName('hamburger');
 
         hamMenu[0].addEventListener("mouseover",openMenu);
         hamMenu[0].addEventListener("mouseout",openMenu);
 
         function openMenu(){
-          if(hamMenu[0].innerHTML == "menu"){
-            hamMenu[0].innerHTML = "menu_open";
-          } else {
+          if(hamMenu[0].innerHTML == "menu_open"){
             hamMenu[0].innerHTML = "menu";
+          } else {
+            hamMenu[0].innerHTML = "menu_open";
           }//end else statement
         }
 //window load function
