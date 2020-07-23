@@ -102,18 +102,18 @@ close
       }
 
       //get element by getElementsBy Name
-      var hamMenu = document.getElementsByName('hamburger');
+     var hamMenu = document.getElementsByName('hamburger');
 
-      hamMenu[0].addEventListener('click', open);
-    
+        hamMenu[0].addEventListener("mouseover",openMenu);
+        hamMenu[0].addEventListener("mouseout",openMenu);
 
-      function open(){
-        if(this.innerHTML == "menu"){
-          this.innerHTML = "menu_open"
-        } else {
-          this.innerHTML = "menu"
+        function openMenu(){
+          if(hamMenu[0].innerHTML == "menu"){
+            hamMenu[0].innerHTML = "menu_open";
+          } else {
+            hamMenu[0].innerHTML = "menu";
+          }//end else statement
         }
-      }
 //window load function
       window.onload = function(){
         //  var modal = document.querySelectorAll('div');
